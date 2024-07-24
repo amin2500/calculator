@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./index.css" />
+    
+  </head>
+  <body>
+   
+    <div class="center">
+      
+      <div class="bottom">
+        <div class="top">
+      <label class="js-display"></label>
+    </div>
+    <p>
+    <button class="numbers" onclick="calculator(`1`)">1</button>
+    <button class="numbers" onclick="calculator(`2`)">2</button>
+    <button class="numbers"onclick="calculator(`3`)">3</button>
+    <button class="operator" onclick="calculator(`+`)">+</button>
+  </p>
+  <p>
+    <button class="numbers" onclick="calculator(`4`)">4</button>
+    <button class="numbers" onclick="calculator(`5`)">5</button>
+    <button class="numbers" onclick="calculator(`6`)">6</button>
+    <button class="operator" onclick="calculator(`-`)">-</button>
+  </p>
+  <p>
+    <button class="numbers" onclick="calculator(`7`)">7</button>
+    <button class="numbers" onclick="calculator(`8`)">8</button>
+    <button class="numbers" onclick="calculator(`9`)">9</button>
+    <button class="operator" onclick="calculator(`*`)">X</button>
+  </p>
+  <p>
+    <button class="numbers" onclick="calculator(`0`)">0</button>
+    <button class="numbers" onclick="calculator(`.`)">.</button>
+
+    <button class="operator" onclick="calculation = eval(calculation);display(); localStorage.setItem('calculation',calculation)">=</button>
+    <button class="operator" onclick="calculator(`/`)">÷</button>
+  </p>
+    <button class="operator" onclick="calculation = '';display();  localStorage.setItem('calculation',calculation)" >C</button>
+  </div>
+</div>
+
+
+<script src="./index.js"></script>
+  </body>
+</html>
